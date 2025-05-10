@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: 'Gilroy-Light', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.8s ease;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.bpm-screen,
+.music-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.now {
+    font-family: 'Gilroy-Medium';
+    font-size: 24px;
+    color: #DBE6FF;
+    opacity: 1;
+    margin-bottom: 8px;
+}
+
+.heart {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.bpm {
+    font-size: 32px;
+    font-family: 'Gilroy-Light';
+    color: #fff;
+}
+
+.bpm-num {
+    font-size: 64px;
+    font-family: 'Gilroy-ExtraBoldItalic';
+}
+
+.emotion-message {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: white;
+    white-space: normal;
+}
+
+.emotion-message span {
+    display: block;
+}
+
+.album {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 60px;
+    outline: 20px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 0px;
+}
+
+.song {
+    font-family: 'Gilroy-Medium';
+    font-size: 24px;
+    color: #fff;
+}
+
+.artist {
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+button {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Emotion-specific background */
+body.Happy {
+    background: radial-gradient(circle, #F4DD16 0%, #F45116 100%);
+}
+
+body.Sad {
+    background: radial-gradient(circle, #F4DD16 0%, #169FF4 100%);
+}
+
+body.Calm {
+    background: radial-gradient(circle, #6771FF 0%, #1A005A 100%);
+}
+
+/* Demo fallback image */
+.album::before {
+    content: url("../images/Mask group.png");
+    display: block;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bpm-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bpm-input {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    outline: none;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 20px;
+    font-family: 'Gilroy-Light', sans-serif;
+}
+
+.bpm-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bpm-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Gilroy-Medium', sans-serif;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s ease;
+}
+
+.bpm-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.zen-button {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.zen-button:hover {
+    transform: scale(1.05);
+}
+
+.button-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.zen-button:active {
+    transform: translateY(0);
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.icon-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    width: 60px;
+    height: 60px;
+}

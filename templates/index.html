@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Music Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="{{ emotion or 'Calm' }}">
+    <div class="container">
+        {% if track_title %}
+        <!-- 播放界面 -->
+        <div class="music-screen">
+            <img class="album" src="{{ url_for('static', filename=cover_image) }}">
+            <div class="song">{{ track_title }}</div>
+            <div class="artist">{{ track_artist }}</div>
+            <div class="emotion-message">{{ emotion_text }}</div>
+
+            <audio id="player" autoplay>
+                <source src="{{ url_for('static', filename=track_path) }}" type="audio/mpeg">
+            </audio>
+
+            <div class="button-row">
+                <form action="/stop" method="POST" style="display:inline;">
+                    <button type="submit" class="zen-button icon-only">
+                        <img src="{{ url_for('static', filename='icons/shuffle-01.png') }}" alt="Stop Music"
+                            class="button-icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <!-- 初始界面 -->
+        <div class="bpm-screen">
+            <div class="heart">🤍</div>
+            <p class="now">Welcome to Zen Music</p>
+            <p class="now">Enter your heart rate to find music that mirrors your heartbeat</p>
+            <form action="/simulate" method="POST" class="bpm-form">
+                <input type="number" name="bpm" placeholder="Enter your BPM" required class="bpm-input">
+                <button type="submit" class="bpm-button">Start</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const player = document.getElementById('player');
+            const toggle = document.getElementById('togglePlay');
+
+            if (player && toggle) {
+                toggle.addEventListener('click', () => {
+                    if (player.paused) {
+                        player.play();
+                        toggle.textContent = '⏸';
+                    } else {
+                        player.pause();
+                        toggle.textContent = '▶️';
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

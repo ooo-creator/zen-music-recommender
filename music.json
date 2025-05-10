@@ -1,0 +1,137 @@
+[
+    {
+        "title": "Nocturne Samurai - Autumnal Smile",
+        "artist": "Nocturne Samurai",
+        "emotion": "Sad",
+        "valence": 0.25,
+        "energy": 0.35,
+        "tempo": 75,
+        "filepath": "static/audio/Nocturne Samurai - Autumnal Smile.mp3"
+    },
+    {
+        "title": "Roie Shpigler - Phantom Pain",
+        "artist": "Roie Shpigler",
+        "emotion": "Sad",
+        "valence": 0.20,
+        "energy": 0.42,
+        "tempo": 68,
+        "filepath": "static/audio/Roie Shpigler - Phantom Pain.mp3"
+    },
+    {
+        "title": "Roie Shpigler - Winter Lullaby",
+        "artist": "Roie Shpigler",
+        "emotion": "Sad",
+        "valence": 0.22,
+        "energy": 0.38,
+        "tempo": 80,
+        "filepath": "static/audio/Roie Shpigler - Winter Lullaby.mp3"
+    },
+    {
+        "title": "Sparrow Tree - Shimmering Light",
+        "artist": "Sparrow Tree",
+        "emotion": "Sad",
+        "valence": 0.28,
+        "energy": 0.48,
+        "tempo": 85,
+        "filepath": "static/audio/Sparrow Tree - Shimmering Light.mp3"
+    },
+    {
+        "title": "Tommy H Brandon - Distant Candle Light",
+        "artist": "Tommy H Brandon",
+        "emotion": "Sad",
+        "valence": 0.26,
+        "energy": 0.41,
+        "tempo": 77,
+        "filepath": "static/audio/Tommy H Brandon - Distant Candle Light.mp3"
+    },
+    {
+        "title": "Bobby Coxx And The Righteous - Can Ya Feel it",
+        "artist": "Bobby Coxx And The Righteous",
+        "emotion": "Happy",
+        "valence": 0.91,
+        "energy": 0.83,
+        "tempo": 122,
+        "filepath": "static/audio/Bobby Coxx And The Righteous - Can Ya Feel it.mp3"
+    },
+    {
+        "title": "Danny Shields - OH MY",
+        "artist": "Danny Shields",
+        "emotion": "Happy",
+        "valence": 0.87,
+        "energy": 0.76,
+        "tempo": 115,
+        "filepath": "static/audio/Danny Shields - OH MY.mp3"
+    },
+    {
+        "title": "Devon May - Funk to Funk",
+        "artist": "Devon May",
+        "emotion": "Happy",
+        "valence": 0.89,
+        "energy": 0.79,
+        "tempo": 128,
+        "filepath": "static/audio/Devon May - Funk to Funk.mp3"
+    },
+    {
+        "title": "Gil Kita - Silly Lovebirds",
+        "artist": "Gil Kita",
+        "emotion": "Happy",
+        "valence": 0.85,
+        "energy": 0.74,
+        "tempo": 118,
+        "filepath": "static/audio/Gil Kita - Silly Lovebirds.mp3"
+    },
+    {
+        "title": "Sunny Fruit - No Gloves",
+        "artist": "Sunny Fruit",
+        "emotion": "Happy",
+        "valence": 0.92,
+        "energy": 0.81,
+        "tempo": 125,
+        "filepath": "static/audio/Sunny Fruit - No Gloves.mp3"
+    },
+    {
+        "title": "Adi Goldstein - Tear Away",
+        "artist": "Adi Goldstein",
+        "emotion": "Calm",
+        "valence": 0.65,
+        "energy": 0.30,
+        "tempo": 72,
+        "filepath": "static/audio/Adi Goldstein - Tear Away.mp3"
+    },
+    {
+        "title": "Dor-c - Sunshine Rider - No Backing Vocals",
+        "artist": "Dor-c",
+        "emotion": "Calm",
+        "valence": 0.70,
+        "energy": 0.36,
+        "tempo": 90,
+        "filepath": "static/audio/Dor-c - Sunshine Rider - No Backing Vocals.mp3"
+    },
+    {
+        "title": "Flint - Experience Sonder - Instrumental Version",
+        "artist": "Flint",
+        "emotion": "Calm",
+        "valence": 0.68,
+        "energy": 0.29,
+        "tempo": 80,
+        "filepath": "static/audio/Flint - Experience Sonder - Instrumental Version.mp3"
+    },
+    {
+        "title": "Roie Shpigler - Into the Light - Instrumental Version",
+        "artist": "Roie Shpigler",
+        "emotion": "Calm",
+        "valence": 0.72,
+        "energy": 0.33,
+        "tempo": 78,
+        "filepath": "static/audio/Roie Shpigler - Into the Light - Instrumental Version.mp3"
+    },
+    {
+        "title": "Simon Berggren Ballads - Weekdays in Blue",
+        "artist": "Simon Berggren Ballads",
+        "emotion": "Calm",
+        "valence": 0.66,
+        "energy": 0.27,
+        "tempo": 70,
+        "filepath": "static/audio/Simon Berggren Ballads - Weekdays in Blue.mp3"
+    }
+]
